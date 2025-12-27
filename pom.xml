@@ -39,7 +39,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!-- 它只提供「Server 核心邏輯」，不負責「怎麼連線」 -->
+        <!-- 它只提供「Server 核心邏輯」，不負責「怎麼連線」 stdio (stdin / stdout) -->
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-starter-mcp-server</artifactId>

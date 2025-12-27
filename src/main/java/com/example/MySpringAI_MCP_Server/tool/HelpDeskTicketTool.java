@@ -33,9 +33,8 @@ public class HelpDeskTicketTool {
     }
 
     @Tool(description = "Fetch the status of the tickets based on a given userName")
-    public List<HelpDeskTicketEntity> getTicketStatus(HelpDeskTicketPayload payload) {
+    public List<HelpDeskTicketEntity> getTicketStatus(String userName) {
 
-        String userName = payload.userName();
         log.info("Fetching tickets for user: {}", userName);
 
         // 查詢該使用者所有工單並回傳；模型可用此結果回答進度
